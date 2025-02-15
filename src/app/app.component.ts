@@ -1,6 +1,5 @@
 import { CommonModule } from '@angular/common';
 import { Component, HostListener } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ContactServiceService } from './contact-service.service';
@@ -8,7 +7,7 @@ import { ContactServiceService } from './contact-service.service';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,CommonModule, ReactiveFormsModule],
+  imports: [CommonModule, ReactiveFormsModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
